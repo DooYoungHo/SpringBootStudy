@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: core_day2
+
+
+person:
+  name: Youngho
