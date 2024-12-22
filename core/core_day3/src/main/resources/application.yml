@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: core_day3
+
+
+logging:
+  logback:
+    rollingpolicy:
+      max-history: 7
+      clean-history-on-start: false

@@ -1,0 +1,6 @@
+--> processOrder.processOrder()
+--> receiveOrder.receiveOrder()
+<-- receiveOrder.receiveOrder()
+--> processPayment.processPayment()
+<-- processPayment.processPayment()
+<-- processOrder.processOrder()
