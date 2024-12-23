@@ -53,12 +53,12 @@
 
 - GET /student/{studentId}와는 다른 별도의 Controller Method로 작성한다
 
-쿠키를 이용한 로그인 기능
+- 쿠키를 이용한 로그인 기능
 SESSION 이라는 이름을 가진 쿠키가 있으면 로그인 된것으로 간주</br>
-로그인하지 않고 다른 기능 사용 불가
+로그인하지 않고 다른 기능 사용 불가</br>
 GET /login 경로로 접근하면 SESSION 쿠키를 확인하고
 있으면 학생 정보 조회 화면(studentView) 을 보여준다.
-없으면 로그인 폼(loginForm)을 보여준다.
+없으면 로그인 폼(loginForm)을 보여준다.</br>
 POST /login 경로로 접근하면 입력받은 id, password와 일치하는 학생이 있는지 확인하고
 있으면 SESSION 쿠키를 만들고 학생 정보 조회 화면(studentView) 을 보여준다.
 없으면 로그인 폼(loginForm)으로 redirect 한다.
