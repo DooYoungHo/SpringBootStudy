@@ -1,5 +1,6 @@
 package com.youngho.mvc_day2.repository;
 
+import com.youngho.mvc_day2.dto.LoginRequestDto;
 import com.youngho.mvc_day2.dto.StudentRequestDto;
 import com.youngho.mvc_day2.entity.Student;
 import com.youngho.mvc_day2.exception.StudentAlreadyExistsException;
@@ -23,6 +24,15 @@ public class StudentRepositoryImpl implements StudentRepository {
             100,
             "This is Test"
         ));
+    }
+
+    @Override
+    public boolean matches(LoginRequestDto loginRequestDto) {
+        if (exists(loginRequestDto.id())) {
+            Student student = studentMap.get(loginRequestDto.id());
+            return student.getPassword().equals(loginRequestDto.password());
+        }
+        return false;
     }
 
     @Override
