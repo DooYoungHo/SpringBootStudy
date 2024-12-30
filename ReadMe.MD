@@ -82,3 +82,14 @@ GET /student/{studentId}
     - 모든 메세지는 영어, 한국어 2개 언어 지원
 
 - 언어 변경 가능
+
+## Day06. Spring MVC
+
+- interceptor 를 이용한 로그인/로그아웃 기능 추가
+    - 작업했던 로그인 체크하는 기능을 interceptor를 이용해서 구현
+    - 로그인하지 않고 다른 기능 사용 불가
+    - 로그인 체크하는 LoginCheckInterceptor 작성
+
+- Controller 들에 대해
+    - Test Coverage 100%가 되도록 Test Case 작성
+    - Unit Test로 작성할 것
