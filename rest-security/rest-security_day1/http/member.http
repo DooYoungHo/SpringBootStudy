@@ -1,0 +1,33 @@
+### Find Member
+GET localhost:8080/member/1
+Accept: text/csv
+
+### Find Members
+GET localhost:8080/members
+Accept: application/json
+
+### Find Members
+GET localhost:8080/members?page=0&size=3
+Accept: application/json
+
+### add Member
+POST localhost:8080/member
+Content-Type: application/json
+
+{
+  "id" : "6",
+  "name" : "두영호",
+  "class" : "B",
+  "locale" : "EN"
+}
+
+### add Member Error
+POST localhost:8080/member
+Content-Type: application/json
+
+{
+  "id" : "2",
+  "name" : "두영호",
+  "class" : "B",
+  "locale" : "EN"
+}

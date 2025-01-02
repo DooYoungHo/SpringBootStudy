@@ -1,0 +1,27 @@
+### Find Project
+GET localhost:8080/project/1
+Accept: application/json
+
+### Find Projects
+GET localhost:8080/projects
+Accept: application/json
+
+### Find Projects
+GET localhost:8080/projects?page=0&size=3
+Accept: application/json
+
+### Create Project
+POST localhost:8080/project
+Content-Type: application/json
+
+{
+  "code" : "d",
+  "type" : "PRIVATE"
+}
+
+### Add ProjectMember
+POST localhost:8080/project/1/3
+Content-Type: application/json
+
+### Get ProjectMember
+GET localhost:8080/project/1/members

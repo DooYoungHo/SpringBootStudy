@@ -1,7 +1,7 @@
 package com.youngho.restsecurity_day1.entity.member;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.Locale;
+import com.youngho.restsecurity_day1.entity.locale.Locale;
 import lombok.Getter;
 import lombok.Setter;
 
